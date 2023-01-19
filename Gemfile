@@ -6,5 +6,5 @@ source 'https://rubygems.org'
 # gem 'vienna', '~> 0.4.2'
 
 # If using laptop, disable Ruby ver and enable these
-gem 'rack', '~>1.6.11'
+gem 'rack', '~>2.1.4'
 gem 'vienna'
