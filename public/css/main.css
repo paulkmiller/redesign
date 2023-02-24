@@ -440,9 +440,11 @@ figure {
   background: rgba(1, 204, 166, 0.2);
   border-radius: 50px;
   opacity: 0; }
+
 .pulse:before {
   transform: scale(1);
   animation: pulse 3s infinite linear; }
+
 .pulse:after {
   animation: pulse 3s 2s infinite linear; }
 
@@ -456,6 +458,7 @@ figure {
   100% {
     transform: scale(1.4);
     opacity: 0; } }
+
 i.fa.fa-code {
   color: #5BD4E7;
   font-size: 1.8em;
@@ -494,6 +497,7 @@ i.fa.fa-code {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1); } }
+
 @keyframes cd-bounce-1 {
   0% {
     opacity: 0;
@@ -509,6 +513,7 @@ i.fa.fa-code {
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1); } }
+
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
@@ -593,6 +598,7 @@ i.fa.fa-code {
     -webkit-transform: translateX(20px); }
   100% {
     -webkit-transform: translateX(0); } }
+
 @keyframes cd-bounce-2 {
   0% {
     opacity: 0;
@@ -608,6 +614,7 @@ i.fa.fa-code {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0); } }
+
 @-webkit-keyframes cd-bounce-2-inverse {
   0% {
     opacity: 0;
@@ -617,6 +624,7 @@ i.fa.fa-code {
     -webkit-transform: translateX(-20px); }
   100% {
     -webkit-transform: translateX(0); } }
+
 @keyframes cd-bounce-2-inverse {
   0% {
     opacity: 0;
@@ -632,6 +640,7 @@ i.fa.fa-code {
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0); } }
+
 .card-header {
   align-items: stretch;
   box-shadow: 0 1px 2px rgba(10, 10, 10, 0.1);
@@ -812,9 +821,11 @@ i.fa.fa-code {
 @media (min-width: 768px) {
   #projects .card {
     margin: 20px 20px; } }
+
 @media (min-width: 1000px) {
   #projects .card {
     margin: 35px 20px; } }
+
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
@@ -860,10 +871,12 @@ span.cd-date {
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
 .cd-title h2 {
   font-size: 1.5rem;
   line-height: 1.5;
   font-weight: 700; }
+
 .cd-title p {
   font-size: 1rem;
   font-family: "Merriweather", serif;
@@ -924,6 +937,7 @@ span.cd-date {
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0); }
+
 .projects-container .cd-scroll {
   position: absolute;
   bottom: 30px;
@@ -947,6 +961,7 @@ span.cd-date {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2); }
+
 .no-touch .project-is-open .cd-scroll:hover {
   -webkit-transform: translateX(-50%) scale(1.2);
   -ms-transform: translateX(-50%) scale(1.2);
@@ -959,6 +974,7 @@ span.cd-date {
     -webkit-transform: translateY(10px) translateX(-50%) scale(1); }
   100% {
     -webkit-transform: translateX(-50%) scale(1); } }
+
 @keyframes cd-translate {
   0% {
     -webkit-transform: translateX(-50%) scale(1);
@@ -972,6 +988,7 @@ span.cd-date {
     -webkit-transform: translateX(-50%) scale(1);
     -ms-transform: translateX(-50%) scale(1);
     transform: translateX(-50%) scale(1); } }
+
 .skills {
   display: flex;
   align-items: center;
@@ -1158,28 +1175,27 @@ span.cd-date {
   .cd-timeline-content .timeline-content-info .timeline-content-info-title,
   .cd-timeline-content .timeline-content-info .timeline-content-info-date {
     width: calc(100% - 2px); }
-
   .cd-timeline-content .timeline-content-info .timeline-content-info-title {
     margin-bottom: 5px; } }
+
 @media all and (min-width: 565px) {
   .cd-timeline-content .timeline-content-info .timeline-content-info-title,
   .cd-timeline-content .timeline-content-info .timeline-content-info-date {
     width: calc(50% - 2px); }
-
   .cd-timeline-content .timeline-content-info .timeline-content-info-title {
     margin-bottom: 0px; } }
+
 @media all and (min-width: 768px) {
   .cd-timeline-content h2 {
     font-size: 20px;
     font-size: 1.25rem; }
-
   .cd-timeline-content p {
     font-size: 16px;
     font-size: .9rem; }
-
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 14px;
     font-size: 0.875rem; } }
+
 @media all and (min-width: 1024px) {
   .intro h2 {
     font-size: 40px; }
@@ -1188,22 +1204,18 @@ span.cd-date {
     line-height: inherit; }
   .intro h5 {
     line-height: inherit; }
-
   #bot-h5 {
     letter-spacing: 10px;
     margin-top: 0px; }
-
   .name {
     font-size: 1em;
     margin-left: -50%; }
-
   .sub-name {
     left: 50%;
     margin-top: 10px;
     margin-left: 23px;
     position: absolute;
     font-size: 35px; }
-
   .projects-container::before {
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'desktop'; }
@@ -1259,7 +1271,6 @@ span.cd-date {
       width: 100vw;
       -webkit-transition: width 0.4s 0s, z-index 0s 0s, left 0.4s 0s;
       transition: width 0.4s 0s, z-index 0s 0s, left 0.4s 0s; }
-
   .cd-title {
     top: 50vh;
     width: 25vw;
@@ -1267,7 +1278,6 @@ span.cd-date {
     -webkit-transform: translateY(-50%) translateX(-20px);
     -ms-transform: translateY(-50%) translateX(-20px);
     transform: translateY(-50%) translateX(-20px); }
-
   .is-loaded .cd-title {
     opacity: 1;
     -webkit-transform: translateY(-50%);
@@ -1279,16 +1289,14 @@ span.cd-date {
     left: 37.5vw;
     -webkit-transition: -webkit-transform 0.6s, opacity 0s, left 0.4s;
     transition: transform 0.6s, opacity 0s, left 0.4s; }
-
   .cd-title p {
     display: block; }
-
   .cd-title h2 {
     font-size: 1.5em; }
-
   .cd-project-info {
     position: relative;
     z-index: 1; } }
+
 @media all and (min-width: 1170px) {
   .dinklebutt, .Optimus_logo {
     min-height: 40px;
@@ -1296,7 +1304,6 @@ span.cd-date {
     -webkit-transform: translateX(-12%) translateY(-12%);
     -ms-transform: translateX(-12%) translateY(-12%);
     transform: translateX(-12%) translateY(-12%); }
-
   #cd-timeline img.tl_logo {
     min-height: 50px;
     min-width: 50px;
@@ -1332,9 +1339,8 @@ span.cd-date {
   #cd-timeline .fa.fa-code {
     font-size: 2.5em;
     margin: 10px 9px; }
-
   #cd-timeline
-  .cd-timeline-img {
+.cd-timeline-img {
     width: 60px;
     height: 60px;
     left: 50%;
@@ -1342,29 +1348,23 @@ span.cd-date {
     /* Force Hardware Acceleration in WebKit */
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden; }
-
   .cssanimations .cd-timeline-img.is-hidden {
     visibility: hidden; }
-
   .cssanimations .cd-timeline-img.bounce-in {
     visibility: visible;
     -webkit-animation: cd-bounce-1 0.6s;
     animation: cd-bounce-1 0.6s; }
-
   .cd-timeline-content {
     margin-left: 0;
     padding: 1.6em;
     width: 45%; }
-
   .cd-timeline-content::before {
     top: 24px;
     left: 100%;
     border-color: transparent;
     border-left-color: #333C42; }
-
   .cd-timeline-content .cd-read-more {
     float: left; }
-
   .cd-timeline-content .cd-date {
     position: absolute;
     width: 100%;
@@ -1372,49 +1372,37 @@ span.cd-date {
     top: 6px;
     font-size: 16px;
     font-size: 1rem; }
-
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right; }
-
   .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
     top: 24px;
     left: auto;
     right: 100%;
     border-color: transparent;
     border-right-color: #333C42; }
-
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right; }
-
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
     left: auto;
     right: 122%;
     text-align: right; }
-
   .cssanimations .cd-timeline-content.is-hidden {
     visibility: hidden; }
-
   .cssanimations .cd-timeline-content.bounce-in {
     visibility: visible;
     -webkit-animation: cd-bounce-2 0.6s;
     animation: cd-bounce-2 0.6s; }
-
   .cd-timeline-block {
     margin: 4em 0; }
-
   .cd-timeline-block:first-child {
     margin-top: 0; }
-
   .cd-timeline-block:last-child {
     margin-bottom: 0; }
-
   #cd-timeline {
     margin-top: 3em; }
-
   #cd-timeline::before {
     left: 50%;
     margin-left: -1px; }
-
   .projects-container .cd-single-project::after {
     background-attachment: fixed;
     -webkit-transform: scale(1.1);
@@ -1425,21 +1413,16 @@ span.cd-date {
   .projects-container .cd-single-project.is-loaded::after {
     /* opacity: 0; */
     /* Background opacity control */ }
-
   .no-touch .projects-container .cd-single-project:hover::after, .projects-container .cd-single-project.is-full-width.is-loaded::after {
     opacity: 1;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1); }
-
   .projects-container .cd-close {
     background-image: url("../assets/icon-close-desktop.svg"); }
   .projects-container .cd-scroll {
     background-image: url("../assets/icon-arrow-desktop.svg"); }
-
   /* inverse bounce effect on even content blocks */
   .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
     animation: cd-bounce-2-inverse 0.6s; } }
-
-/*# sourceMappingURL=main.css.map */
