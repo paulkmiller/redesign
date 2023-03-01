@@ -32,7 +32,7 @@ $(document).ready(function() {
   });
 
   // Landing typer 
-  var typed = new Typed('.element', {
+  const typed = new Typed('.element', {
     strings: [" Empowering^1500", " Art^1500", " Freedom^1500", " A Headache^1500", " Life^1500"],
     typeSpeed: 100
   });
@@ -41,7 +41,7 @@ $(document).ready(function() {
   // Projects 
   // open project
   $('.cd-single-project').on('click', function() {
-    var selectedProject = $(this),
+    let selectedProject = $(this),
       toggle = !selectedProject.hasClass('is-full-width');
     if (toggle) toggleProject($(this), $('.projects-container'), toggle);
   });
@@ -75,7 +75,7 @@ $(document).ready(function() {
       project.addClass('is-full-width').siblings('li').removeClass('is-loaded');
     } else {
       // check media query
-      var mq = window.getComputedStyle(document.querySelector('.projects-container'), '::before').getPropertyValue('content').replace(/"/g, "").replace(/'/g, ""),
+      let mq = window.getComputedStyle(document.querySelector('.projects-container'), '::before').getPropertyValue('content').replace(/"/g, "").replace(/'/g, ""),
         delay = (mq == 'mobile') ? 100 : 0;
 
       container.removeClass('project-is-open');
@@ -96,7 +96,7 @@ $(document).ready(function() {
   }
 
   function changeOpacity() {
-    var newOpacity = 1 - ($('.projects-container').scrollTop()) / 300;
+    const newOpacity = 1 - ($('.projects-container').scrollTop()) / 300;
     $('.projects-container .cd-scroll').css('opacity', newOpacity);
     $('.is-full-width .cd-title').css('opacity', newOpacity);
     $('.is-full-width').hide().show(0);
@@ -112,7 +112,7 @@ $(document).ready(function() {
   }
 
   //  Fade-In code from About Me Section 
-  var timelineBlocks = $('.cd-timeline-block'),
+  let timelineBlocks = $('.cd-timeline-block'),
     offset = .8;
 
   // hide timeline blocks which are outside the viewport
@@ -143,16 +143,16 @@ $(document).ready(function() {
   }
 
   // bar graph
-  var wrapper = $('.skills');
-  var helper = $('.skills .stats .helper');
-  var bar  = $('.stats__item-bar');
-  var icons = $('.stats__item-icon');
-  var overlay = $('.stats__overlay');
-  var back = $('.stats__overlay-back');
-  var isOpen = false;
+  let wrapper = $('.skills');
+  let helper = $('.skills .stats .helper');
+  let bar  = $('.stats__item-bar');
+  let icons = $('.stats__item-icon');
+  let overlay = $('.stats__overlay');
+  let back = $('.stats__overlay-back');
+  let isOpen = false;
 
-  var vInfo = $('#info');
-  var vScore = $('#score');
+  let vInfo = $('#info');
+  let vScore = $('#score');
 
   bar.on('click', showOverlay);
   back.on('click', showOverlay);
@@ -187,21 +187,21 @@ $(document).ready(function() {
     }
   }
 
-  var data = [
+  const data = [
     {
       info: "I am firmly grounded in semantic markup and the long-term effects this has on a project, be it with A11Y, or with another developer looking to make sense of everything.",
       score: '100'
     },
     {
-      info: "Quite literally my favorite language since I started this journey into Web Development. I've always been one to aim to realize and extend a design using this robust and fantastic language, especially with SCSS.",
+      info: "I've always been one to aim to realize and extend a design using this robust and fantastic language, especially with SCSS. This was my gateway drug into web development.",
       score: '90'      
     },
     {
-      info: "With the prevalance of JS frameworks in todays environment, I've kept my focus on ES5/ES6 and jQuery. I am now in the process of becoming familiar with React and look forward to future projects involving it, as I already practice component-based structures with PHP.",
-      score: '60'
+      info: "JavaScript is in an amazing place today. I love all the things available to frontend development by virtue of Node.js allowing server-side development with Javascript and frameworks like React / Vue having turned component design the norm, there's so much you can do now. Javascript is stupid, fun, frustrating, and incredible, all at the same time.",
+      score: '70'
     },
     {
-      info: "A major focus of mine over the past few years, especially as the air around failing WCAG conventions has becoming increasingly litigious. Accessibility is the moral responsibility of every developer and not simply a nicety.",
+      info: "A major focus of mine over my career, especially as the air around failing WCAG conventions has become increasingly litigious. Accessibility is the moral responsibility of every developer and not simply a nicety.",
       score: '80'
     },
     {
