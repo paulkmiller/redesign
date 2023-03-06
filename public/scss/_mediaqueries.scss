@@ -1,31 +1,31 @@
 @media all and (min-width: 0px) {
-  .cd-timeline-content .timeline-content-info .timeline-content-info-title, 
-  .cd-timeline-content .timeline-content-info .timeline-content-info-date {
+  .pm-timeline-content .timeline-content-info .timeline-content-info-title, 
+  .pm-timeline-content .timeline-content-info .timeline-content-info-date {
     width: calc(100% - 2px);
   }
-  .cd-timeline-content .timeline-content-info .timeline-content-info-title {
+  .pm-timeline-content .timeline-content-info .timeline-content-info-title {
     margin-bottom: 5px;
   }
 }
 @media all and (min-width: 565px) {
-  .cd-timeline-content .timeline-content-info .timeline-content-info-title, 
-  .cd-timeline-content .timeline-content-info .timeline-content-info-date {
+  .pm-timeline-content .timeline-content-info .timeline-content-info-title, 
+  .pm-timeline-content .timeline-content-info .timeline-content-info-date {
     width: calc(50% - 2px);
   }
-  .cd-timeline-content .timeline-content-info .timeline-content-info-title {
+  .pm-timeline-content .timeline-content-info .timeline-content-info-title {
     margin-bottom: 0px;
   }
 }
 @media all and (min-width: 768px) {
-  .cd-timeline-content h2 {
+  .pm-timeline-content h2 {
     font-size: 20px;
     font-size: 1.25rem;
   }
-  .cd-timeline-content p {
+  .pm-timeline-content p {
     font-size: 16px;
     font-size: .9rem;
   }
-  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+  .pm-timeline-content .pm-read-more, .pm-timeline-content .pm-date {
     font-size: 14px;
     font-size: 0.875rem;
   }
@@ -64,7 +64,7 @@
       /* never visible - this is used in jQuery to check the current MQ */
       content: 'desktop';
     }
-    .cd-single-project {
+    .pm-single-project {
       position: absolute;
       top: 0;
       left: 0;
@@ -135,7 +135,7 @@
       }
     }
   }
-  .cd-title {
+  .pm-title {
     top: 50vh;
     width: 25vw;
     opacity: 0;
@@ -144,7 +144,7 @@
     transform: translateY(-50%) translateX(-20px);
   }
   .is-loaded {
-    .cd-title {
+    .pm-title {
       opacity: 1;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -152,19 +152,19 @@
       -webkit-transition: -webkit-transform 0.6s, opacity 0.6s, left 0.4s;
       transition: transform 0.6s, opacity 0.6s, left 0.4s;
     }
-    &.is-full-width .cd-title {
+    &.is-full-width .pm-title {
       left: 37.5vw;
       -webkit-transition: -webkit-transform 0.6s, opacity 0s, left 0.4s;
       transition: transform 0.6s, opacity 0s, left 0.4s;
     }
   }
-  .cd-title p {
+  .pm-title p {
     display: block;
   }
-  .cd-title h2{
+  .pm-title h2{
     font-size: 1.5em;
   }
-  .cd-project-info {
+  .pm-project-info {
     position: relative;
     z-index: 1;
   }
@@ -178,7 +178,7 @@
         -ms-transform: translateX(-12%) translateY(-12%);
             transform: translateX(-12%) translateY(-12%);
   }
-  #cd-timeline {
+  #pm-timeline {
     img.tl_logo {
       min-height: 50px;
       min-width: 50px;
@@ -225,8 +225,8 @@
     }
   }
  
-  #cd-timeline 
-  .cd-timeline-img {
+  #pm-timeline 
+  .pm-timeline-img {
     width: 60px;
     height: 60px;
     left: 50%;
@@ -235,29 +235,29 @@
     -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
   }
-  .cssanimations .cd-timeline-img.is-hidden {
+  .cssanimations .pm-timeline-img.is-hidden {
     visibility: hidden;
   }
-  .cssanimations .cd-timeline-img.bounce-in {
+  .cssanimations .pm-timeline-img.bounce-in {
     visibility: visible;
-    -webkit-animation: cd-bounce-1 0.6s;
-    animation: cd-bounce-1 0.6s;
+    -webkit-animation: pm-bounce-1 0.6s;
+    animation: pm-bounce-1 0.6s;
   }
-  .cd-timeline-content {
+  .pm-timeline-content {
     margin-left: 0;
     padding: 1.6em;
     width: 45%;
   }
-  .cd-timeline-content::before {
+  .pm-timeline-content::before {
     top: 24px;
     left: 100%;
     border-color: transparent;
     border-left-color: #333C42;
   }
-  .cd-timeline-content .cd-read-more {
+  .pm-timeline-content .pm-read-more {
     float: left;
   }
-  .cd-timeline-content .cd-date {
+  .pm-timeline-content .pm-date {
     position: absolute;
     width: 100%;
     left: 122%;
@@ -265,49 +265,49 @@
     font-size: 16px;
     font-size: 1rem;
   }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content {
+  .pm-timeline-block:nth-child(even) .pm-timeline-content {
     float: right;
   }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+  .pm-timeline-block:nth-child(even) .pm-timeline-content::before {
     top: 24px;
     left: auto;
     right: 100%;
     border-color: transparent;
     border-right-color: #333C42;
   }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
+  .pm-timeline-block:nth-child(even) .pm-timeline-content .pm-read-more {
     float: right;
   }
-  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+  .pm-timeline-block:nth-child(even) .pm-timeline-content .pm-date {
     left: auto;
     right: 122%;
     text-align: right;
   }
-  .cssanimations .cd-timeline-content.is-hidden {
+  .cssanimations .pm-timeline-content.is-hidden {
     visibility: hidden;
   }
-  .cssanimations .cd-timeline-content.bounce-in {
+  .cssanimations .pm-timeline-content.bounce-in {
     visibility: visible;
-    -webkit-animation: cd-bounce-2 0.6s;
-    animation: cd-bounce-2 0.6s;
+    -webkit-animation: pm-bounce-2 0.6s;
+    animation: pm-bounce-2 0.6s;
   }
-  .cd-timeline-block {
+  .pm-timeline-block {
     margin: 4em 0;
   }
-  .cd-timeline-block:first-child {
+  .pm-timeline-block:first-child {
     margin-top: 0;
   }
-  .cd-timeline-block:last-child {
+  .pm-timeline-block:last-child {
     margin-bottom: 0;
   }
-  #cd-timeline {
+  #pm-timeline {
     margin-top: 3em;
   }
-  #cd-timeline::before {
+  #pm-timeline::before {
     left: 50%;
     margin-left: -1px;
   }
-  .projects-container .cd-single-project {
+  .projects-container .pm-single-project {
     &::after {
       background-attachment: fixed;
       -webkit-transform: scale(1.1);
@@ -320,23 +320,23 @@
       /* opacity: 0; */ /* Background opacity control */
     }
   }
-  .no-touch .projects-container .cd-single-project:hover::after, .projects-container .cd-single-project.is-full-width.is-loaded::after {
+  .no-touch .projects-container .pm-single-project:hover::after, .projects-container .pm-single-project.is-full-width.is-loaded::after {
     opacity: 1;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
   }
   .projects-container {
-    .cd-close {
+    .pm-close {
       background-image: url("../assets/icon-close-desktop.svg");
     }
-    .cd-scroll {
+    .pm-scroll {
       background-image: url("../assets/icon-arrow-desktop.svg");
     }
   }
   /* inverse bounce effect on even content blocks */
-  .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
-    -webkit-animation: cd-bounce-2-inverse 0.6s;
-    animation: cd-bounce-2-inverse 0.6s;
+  .cssanimations .pm-timeline-block:nth-child(even) .pm-timeline-content.bounce-in {
+    -webkit-animation: pm-bounce-2-inverse 0.6s;
+    animation: pm-bounce-2-inverse 0.6s;
   }
 }

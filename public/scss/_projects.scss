@@ -255,7 +255,7 @@
   }
 }
 
-.cd-container {
+.pm-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
   max-width: 1170px;
@@ -267,7 +267,7 @@
     clear: both;
   }
 }
-span.cd-date{
+span.pm-date{
   color: #fff;
 }
 .projects-container {
@@ -283,7 +283,7 @@ span.cd-date{
   }
 }
 
-.cd-title {
+.pm-title {
   position: absolute;
   z-index: 1;
   left: 0;
@@ -295,13 +295,13 @@ span.cd-date{
   text-align: center;
 }
 
-.is-full-width .cd-title {
+.is-full-width .pm-title {
   top: 50vh;
   -webkit-transition: opacity 0s, top 0.4s;
   transition: opacity 0s, top 0.4s;
 }
 
-.cd-title {
+.pm-title {
   > * {
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     -webkit-font-smoothing: antialiased;
@@ -323,7 +323,7 @@ span.cd-date{
   }
 }
 
-.cd-project-info {
+.pm-project-info {
   clear: both;
   visibility: hidden;
   opacity: 0;
@@ -339,12 +339,12 @@ span.cd-date{
   }
 }
 
-.is-full-width .cd-project-info {
+.is-full-width .pm-project-info {
   visibility: visible;
   opacity: 1;
 }
 
-.cd-project-info p {
+.pm-project-info p {
   width: 90%;
   max-width: 800px;
   margin: 0 auto;
@@ -356,7 +356,7 @@ span.cd-date{
   // max-width: 1200px;
   text-align: center;
   margin: 0 auto;
-  .cd-close, .cd-scroll {
+  .pm-close, .pm-scroll {
     display: block;
     z-index: 1;
     width: 44px;
@@ -372,7 +372,7 @@ span.cd-date{
 }
 
 .projects-container {
-  .cd-close {
+  .pm-close {
     position: fixed;
     top: 10%;
     right: 5%;
@@ -383,7 +383,7 @@ span.cd-date{
     -ms-transform: scale(0);
     transform: scale(0);
   }
-  .cd-scroll {
+  .pm-scroll {
     position: absolute;
     bottom: 30px;
     left: 50%;
@@ -397,7 +397,7 @@ span.cd-date{
 }
 
 .project-is-open {
-  .cd-close, .cd-scroll {
+  .pm-close, .pm-scroll {
     visibility: visible;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
@@ -408,19 +408,19 @@ span.cd-date{
 }
 
 .no-touch .project-is-open {
-  .cd-close:hover {
+  .pm-close:hover {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
   }
-  .cd-scroll:hover {
+  .pm-scroll:hover {
     -webkit-transform: translateX(-50%) scale(1.2);
     -ms-transform: translateX(-50%) scale(1.2);
     transform: translateX(-50%) scale(1.2);
   }
 }
 
-@-webkit-keyframes cd-translate {
+@-webkit-keyframes pm-translate {
   0% {
     -webkit-transform: translateX(-50%) scale(1);
   } 50% {
@@ -430,7 +430,7 @@ span.cd-date{
   }
 }
 
-@keyframes cd-translate {
+@keyframes pm-translate {
   0% {
     -webkit-transform: translateX(-50%) scale(1);
     -ms-transform: translateX(-50%) scale(1);

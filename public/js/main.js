@@ -40,14 +40,14 @@ $(document).ready(function() {
 
   // Projects 
   // open project
-  $('.cd-single-project').on('click', function() {
+  $('.pm-single-project').on('click', function() {
     let selectedProject = $(this),
       toggle = !selectedProject.hasClass('is-full-width');
     if (toggle) toggleProject($(this), $('.projects-container'), toggle);
   });
 
   // close project
-  $('.projects-container .cd-close').on('click', function() {
+  $('.projects-container .pm-close').on('click', function() {
     toggleProject($('.is-full-width'), $('.projects-container'), false);
   });
 
@@ -57,13 +57,13 @@ $(document).ready(function() {
 
 
   // scroll to project info
-  $('.projects-container .cd-scroll').on('click', function() {
+  $('.projects-container .pm-scroll').on('click', function() {
     $('.projects-container').animate({
       'scrollTop': $(window).height()
     }, 500);
   });
 
-  // Update Title and .cd-scroll Opacity While Scrolling 
+  // Update Title and .pm-scroll Opacity While Scrolling 
   $('.projects-container').on('scroll', function() {
     window.requestAnimationFrame(changeOpacity);
   });
@@ -84,9 +84,9 @@ $(document).ready(function() {
         opacity: 0
       }, 800, function() {
         project.removeClass('is-loaded');
-        $('.projects-container').find('.cd-scroll').attr('style', '');
+        $('.projects-container').find('.pm-scroll').attr('style', '');
         setTimeout(function() {
-          project.attr('style', '').removeClass('is-full-width').find('.cd-title').attr('style', '');
+          project.attr('style', '').removeClass('is-full-width').find('.pm-title').attr('style', '');
         }, delay);
         setTimeout(function() {
           showCaption($('.projects-container li').eq(0));
@@ -97,8 +97,8 @@ $(document).ready(function() {
 
   function changeOpacity() {
     const newOpacity = 1 - ($('.projects-container').scrollTop()) / 300;
-    $('.projects-container .cd-scroll').css('opacity', newOpacity);
-    $('.is-full-width .cd-title').css('opacity', newOpacity);
+    $('.projects-container .pm-scroll').css('opacity', newOpacity);
+    $('.is-full-width .pm-title').css('opacity', newOpacity);
     $('.is-full-width').hide().show(0);
   }
 
@@ -112,7 +112,7 @@ $(document).ready(function() {
   }
 
   //  Fade-In code from About Me Section 
-  let timelineBlocks = $('.cd-timeline-block'),
+  let timelineBlocks = $('.pm-timeline-block'),
     offset = .8;
 
   // hide timeline blocks which are outside the viewport
@@ -130,15 +130,15 @@ $(document).ready(function() {
   function hideBlocks(blocks, offset) {
     blocks.each(function() {
       ($(this).offset().top > $('.under').scrollTop() + $(window).height() * offset) &&
-      $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+      $(this).find('.pm-timeline-img, .pm-timeline-content').addClass('is-hidden');
     });
   }
 
   function showBlocks(blocks, offset) {
     blocks.each(function() {
       ($(this).offset().top <= $('.under').scrollTop() + $(window).height() * offset &&
-        $(this).find('.cd-timeline-img').hasClass('is-hidden')) &&
-      $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+        $(this).find('.pm-timeline-img').hasClass('is-hidden')) &&
+      $(this).find('.pm-timeline-img, .pm-timeline-content').removeClass('is-hidden').addClass('bounce-in');
     });
   }
 
